@@ -1,0 +1,316 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 40px;
+    max-width: 700px;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+.error-code {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite alternate; /* Added pulse animation */
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.illustration {
+    position: relative;
+    height: 250px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.caveman-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.caveman {
+    position: relative;
+    width: 100px;
+    height: 120px;
+    margin-bottom: 10px;
+    animation: cavemanSway 3s infinite alternate ease-in-out; /* Added sway animation */
+}
+
+@keyframes cavemanSway {
+    0% { transform: translateX(-50%) rotate(-3deg); }
+    100% { transform: translateX(-50%) rotate(3deg); }
+}
+
+.caveman .head {
+    width: 50px;
+    height: 50px;
+    background-color: #8B4513;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.caveman .body {
+    width: 80px;
+    height: 80px;
+    background-color: #FFD700;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.caveman .arm {
+    width: 20px;
+    height: 60px;
+    background-color: #8B4513;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+}
+.caveman .left-arm {
+    left: 10px;
+    transform: rotate(20deg);
+    animation: leftArmMove 3s infinite alternate ease-in-out; /* Added arm movement */
+}
+.caveman .right-arm {
+    right: 10px;
+    transform: rotate(-20deg);
+    animation: rightArmMove 3s infinite alternate ease-in-out; /* Added arm movement */
+}
+
+@keyframes leftArmMove {
+    0% { transform: rotate(20deg); }
+    100% { transform: rotate(25deg); }
+}
+
+@keyframes rightArmMove {
+    0% { transform: rotate(-20deg); }
+    100% { transform: rotate(-25deg); }
+}
+
+.caveman .leg {
+    width: 25px;
+    height: 60px;
+    background-color: #8B4513;
+    border-radius: 12.5px;
+    position: absolute;
+    bottom: 0;
+}
+.caveman .left-leg {
+    left: 20px;
+}
+.caveman .right-leg {
+    right: 20px;
+}
+
+.caveman .beard {
+    width: 40px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.caveman .hair {
+    width: 60px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.stream {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid #FFD700;
+    border-top: none;
+    border-radius: 0 0 80px 80px;
+    bottom: -10px;
+    z-index: 5;
+    animation: drip 1.5s infinite ease-in-out;
+}
+
+.left-stream {
+    left: 50%;
+    transform: translateX(-80px) rotate(10deg);
+    animation-delay: 0s;
+}
+
+.right-stream {
+    left: 50%;
+    transform: translateX(0px) rotate(-10deg);
+    animation-delay: 0.75s;
+}
+
+@keyframes drip {
+    0% { transform: translateX(-80px) rotate(10deg) scale(1, 1); opacity: 1; }
+    50% { transform: translateX(-80px) rotate(10deg) scale(1.1, 0.9); opacity: 0.8; }
+    100% { transform:  translateX(-80px) rotate(10deg) scale(1, 1); opacity: 1; }
+}
+
+
+.rock {
+    position: absolute;
+    background-color: #D3D3D3;
+    bottom: 0;
+    z-index: 1;
+}
+
+.left-rock {
+    width: 100px;
+    height: 150px;
+    border-radius: 50% 50% 0 0;
+    left: 10%;
+    transform: translateX(-50%);
+}
+
+.right-rock {
+    width: 120px;
+    height: 200px;
+    border-radius: 50% 50% 0 0;
+    right: 10%;
+    transform: translateX(50%);
+}
+
+.bush {
+    position: absolute;
+    background-color: #6B8E23;
+    border-radius: 50%;
+    bottom: 0;
+    z-index: 2;
+}
+
+.bush-left-1 {
+    width: 60px;
+    height: 30px;
+    left: 15%;
+    bottom: 10px;
+}
+.bush-left-2 {
+    width: 40px;
+    height: 20px;
+    left: 20%;
+    bottom: 0;
+}
+.bush-right-1 {
+    width: 70px;
+    height: 35px;
+    right: 15%;
+    bottom: 15px;
+}
+.bush-right-2 {
+    width: 50px;
+    height: 25px;
+    right: 20%;
+    bottom: 5px;
+}
+
+
+.message h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.message p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: #5cb85c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #4cae4c;
+}
+
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 90px;
+    }
+    .illustration {
+        height: 200px;
+    }
+    .caveman {
+        width: 80px;
+        height: 100px;
+    }
+    .message h2 {
+        font-size: 26px;
+    }
+    .message p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    .error-code {
+        font-size: 70px;
+    }
+    .illustration {
+        height: 150px;
+    }
+    .caveman {
+        width: 60px;
+        height: 80px;
+    }
+    .home-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,587 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Header{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Logo */
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 10px 60px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* navbar */
+.navbar{
+    float: right;
+    margin: 0px 200px;
+}
+.navbar .nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.Header .navbar .btn {
+    text-decoration: none;
+    border: none;
+    background-color: rgb(17, 0, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.navbar .nav a:hover{
+    color: rgb(17, 0, 255);
+}
+.navbar .nav .btn:hover{
+    background-color: rgb(17, 0, 255);
+    color: white;
+    border: none;
+}
+
+/* hero-banner */
+
+.banner .hero-banner .banner-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Banner section */
+
+.col-6{
+    width: 49%;
+}
+.banner .x{
+    width: 100%;
+    height: 100%;   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    background-color: #fafafa;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation: slideIn 1.5s ease-in-out;
+    
+}
+.banner .banner-text{
+    text-align: center;
+}
+.banner .x .banner-text .banner-info{
+    width: 100%;
+    height: 100%;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+.banner .banner-text h1{
+    font-size: 50px;
+    color: black;
+    padding-bottom: 20px;
+}
+.banner .banner-text p{
+    font-size: 20px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.banner .banner-text button{
+    text-decoration: none;
+    border: none;
+    background-color: rgb(17, 0, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.banner .banner-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body-center h2{
+    text-align: center; 
+    font-size: 60px;
+}
+.body-center p{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* client section */
+
+.client .client-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.client .client-section img{
+    padding: 100px;
+}
+
+/* Animation */
+
+@keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(1);
+                opacity: 1;
+            }
+        }
+.Animation {
+            animation: slideIn 1.5s ease-out;
+            align-items: center;
+            justify-content: center;
+}
+
+/* contianer & row*/
+
+.contianer{
+    width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* col-4 */
+
+.col-4{
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: rgb(233, 233, 233) 7px 7px 7px 7px;
+    height: 200px;
+}
+.icon-build{
+    width: 20px;
+    height: 20px;
+    margin: 20px auto;
+}
+.middle{
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+.content-p {
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+.content-p p{
+    font-size: 15px;
+    color: gray;
+}
+
+/* Communication */
+
+.banner .banner-text .h1-2 :nth-child(2){
+    font-size: 50px;
+    color: rgb(7, 240, 46);
+}
+.banner .banner-text .h1-2 :nth-child(1){
+    font-size: 50px;
+    color: rgb(7, 232, 240);
+}
+
+/*  Col in Col  */
+
+
+.member-member{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.member{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+
+    height: 100%;
+    padding: 20px;
+}
+.member .Group-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.member .Group-1 img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+   
+}
+.member .Group-1 .group p{
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+}
+
+/* tesla-section */
+
+.col-6{
+    width: 50%;
+    height: 400px;
+}
+
+.tesla-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    animation: slideIn 1.5s ease-out;
+}
+.tesla-section .tesla-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: slideIn 1.5s ease-out;
+}
+.tesla-section .tesla-text h1{
+    font-size: 20px;
+    color: rgb(91, 247, 18);
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+}
+.tesla-section .tesla-image{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: slideIn 1.5s ease-in-out;
+}
+.tesla-section .tesla-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.tesla-section .tesla-text :nth-child(1){
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.tesla-section .tesla-text :nth-child(3){
+    font-size: 20px;
+    color: rgb(109, 108, 108);
+}
+
+/* Client Row-Section */
+
+.tesla-section .tesla-text .img-client {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tesla-section .tesla-text .img-client img {
+    width: 40px;
+    margin: 0 10px;
+}
+.tesla-section .tesla-text button{
+    text-decoration: none;
+    border: none;
+    background-color: rgb(17, 0, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.tesla-section .tesla-text button:hover{
+    background-color: rgb(83, 83, 83);
+    color: rgb(255, 166, 0);
+    border: none;
+}
+
+/* manage-roll */
+
+.manage-roll .center-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.manage-roll .center-text h5{
+    font-size: 50px;
+    color: rgb(17, 150, 0);
+    padding: 20px;
+}
+.manage-roll .center-text p{
+    font-size: 20px;
+    color: rgb(80, 80, 80);
+}
+
+
+/* profile-card */
+
+.profile-card{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.profile-card .card-img{
+    margin: 20px 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    animation: slideIn 1.5s ease-out;
+}
+.profile-card .card-img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.profile-card .card-img .box-absolute{
+    width: 80%;
+    height: 180px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    left: 10%;
+    top: 50%;
+    box-shadow: rgba(192, 192, 192, 0.1) 0px -2px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.profile-card .card-img .box-absolute p{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+.profile-card .card-img .box-absolute button{
+    text-decoration: none;
+    border: none;
+    background-color: rgb(17, 0, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+/* sub-footer */
+
+.sub-footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub-footer h6{
+    font-size: 40px;
+    color: rgb(80, 80, 80);
+    padding: 10px;
+}
+.sub-footer button{
+    text-decoration: none;
+    border: none;
+    background-color: rgb(17, 0, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(161, 161, 161);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: slideIn 1.5s ease-out;
+}
+.footer-text .image{
+    width: 140px;
+    height: 25px;
+}
+.footer-text .image img{
+    width: 100%;
+    height: 100%;
+}
+.footer-text .copyright{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-text .copyright p{
+    color: #fafafa;
+    font-size: 20px;
+    padding: 5px;
+}
+.footer-text .social-icons i{
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 5px;
+    color: #fafafa;
+}
+.footer-text .social-icons i:hover{
+    color: rgb(17, 0, 255);
+    background-color: #fafafa;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* footer-left */
+
+.footer-left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: slideIn 1.5s ease-out;
+}
+
+/* company-support */
+
+.company-support{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.company-support .company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.company-support .company .company-info p{
+    font-size: 30px;
+    color: #fafafa;
+    padding: 5px;
+}
+.company-support .company .company-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.company-support .company .company-links a{
+    text-decoration: none;
+    color: #fafafa;
+    padding: 5px;
+    font-size: 15px;
+}
+.company-support .company .company-links a:hover{
+    color: rgb(17, 0, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-left .search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-left .search input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.footer-left .search input:focus{
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+}
+.footer-left .search .search-bar{
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+.footer-left .search i{
+    text-decoration: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+}
+.footer-left .search .search-bar p{
+    font-size: 30px;
+    color: rgb(49, 49, 49);
+    padding: 5px;
+    text-align: center;
+}
