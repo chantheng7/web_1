@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
             margin: 0;
             padding: 0;
@@ -591,3 +592,1081 @@
             background-clip: text;
             animation: pulse 1.5s ease-in-out infinite;
         }
+=======
+
+/* Universal Box-Sizing */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    min-width: 375px;
+    max-width: 1720px;
+    margin: 0 auto; /* Center the body content */
+}
+/* Base Styles (for larger screens or default) */
+.Header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px 60px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* navbar */
+.navbar {
+    float: right;
+    margin: 0px 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center; /* Ensure items are aligned in the center */
+}
+
+.navbar .nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: color 0.3s ease-in-out; /* Add transition for hover effect */
+}
+
+.Header .navbar .btn {
+    text-decoration: none;
+    border: none;
+    background-color: rgb(17, 0, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out; /* Add transition for hover effect */
+}
+
+.navbar .nav a:hover {
+    color: rgb(17, 0, 255);
+}
+
+.Header .navbar .btn:hover { /* Targeting the button specifically */
+    background-color: rgb(10, 0, 150); /* Slightly darker primary color */
+}
+
+
+/* hero-banner */
+/* col-6 is now managed by flexbox for responsiveness */
+.col-6 {
+    width: 49%; /* Default width for desktop */
+}
+
+.banner .hero-banner .banner-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Banner section */
+.banner .x {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    min-height: 500px; /* Use min-height to allow content to dictate height */
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation: slideIn 1.5s ease-in-out;
+    padding: 20px; /* Add some padding for overall spacing */
+}
+
+.banner .banner-text {
+    text-align: center;
+}
+.banner .x .banner-text .banner-info {
+    width: 100%;
+    height: 100%;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.banner .banner-text h1 {
+    font-size: 50px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.banner .banner-text p {
+    font-size: 20px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.banner .banner-text button {
+    text-decoration: none;
+    border: none;
+    background-color: rgb(17, 0, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.banner .banner-text button:hover {
+    background-color: rgb(10, 0, 150);
+}
+
+.banner .banner-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner-image img {
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto;
+    object-fit: contain;
+}
+
+.body-center h2 {
+    text-align: center;
+    font-size: 60px;
+    padding-top: 60px; /* Add top padding for spacing */
+}
+
+.body-center p {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* client section */
+.client .client-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* Adjust padding */
+}
+
+.client .client-section img {
+    padding: 20px; /* Reduced padding for better fit */
+    max-width: 15%; /* Adjust size for more clients */
+    height: auto;
+    object-fit: contain;
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(50px); /* Changed to Y for subtle slide-up */
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.Animation {
+    animation: slideIn 1.5s ease-out;
+    display: flex; /* Use flex to center content */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px; 
+}
+
+/* contianer & row*/
+.contianer {
+    max-width: 1720px; 
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px 0;
+}
+
+/* col-4 */
+.col-4 {
+    width: 30%; 
+    min-width: 280px; 
+    border-radius: 10px;
+    box-shadow: rgb(233, 233, 233) 7px 7px 7px 7px;
+    height: 250px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.icon-build {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;   
+}
+.icon-build img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.middle {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.content-p {
+    padding-top: 10px;
+}
+
+.content-p p {
+    font-size: 15px;
+    color: gray;
+    line-height: 1.5; 
+}
+
+/* Communication */
+.banner .banner-text .h1-2 :nth-child(2) {
+    font-size: 50px;
+    color: rgb(23, 252, 23); 
+}
+
+.banner .banner-text .h1-2 :nth-child(1) {
+    font-size: 50px;
+    color: rgb(7, 232, 240);
+}
+
+/* Col in Col */
+.member-member {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+
+.member {
+    width: 48%; 
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: auto; /* Allow height to adjust */
+}
+
+.member .col-6 {
+    width: 100%; /* Take full width within the .member container */
+    height: auto; /* Adjust height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.member .Group-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px; /* Space between groups */
+    justify-content: center; /* Center content within group */
+}
+
+.member .Group-1 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.member .Group-1 .group p {
+    font-size: 20px;
+    color: black;
+    padding: 10px 0; /* Adjust padding */
+}
+
+/* tesla-section */
+.col-6 {
+    width: 50%; /* Default desktop width */
+    height: auto; /* Allow height to be determined by content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tesla-section {
+    width: 100%;
+    background-color: #fafafa; /* Added background for consistency with other banners */
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: slideIn 1.5s ease-out;
+    padding: 60px 20px; /* Increased padding for better spacing */
+}
+
+.tesla-section .tesla-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align text to the left */
+    padding: 20px;
+    animation: slideIn 1.5s ease-out;
+}
+
+.tesla-section .tesla-text h1 {
+    font-size: 25px; /* Adjusted size */
+    color: rgb(91, 247, 18);
+    padding-top: 20px;
+    padding-right: 0; /* Remove right padding */
+    padding-bottom: 10px;
+}
+
+.tesla-section .tesla-image {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.tesla-section .tesla-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Limit max height */
+    object-fit: contain;
+}
+
+.tesla-section .tesla-text :nth-child(1) {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 1.6; /* Improved readability */
+}
+
+.tesla-section .tesla-text :nth-child(3) {
+    font-size: 20px;
+    color: rgb(109, 108, 108);
+}
+
+/* Client Row-Section */
+.tesla-section .tesla-text .img-client {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap */
+    justify-content: flex-start; /* Align to start */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tesla-section .tesla-text .img-client img {
+    width: 40px;
+    margin: 0 10px 10px 0; /* Add bottom margin for wrapped items */
+}
+
+.tesla-section .tesla-text button.meeting-clients { /* Specific class for this button */
+    text-decoration: none;
+    border: none;
+    background-color: rgb(17, 0, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.tesla-section .tesla-text button.meeting-clients:hover {
+    background-color: rgb(83, 83, 83);
+    color: rgb(255, 166, 0);
+    border: none;
+}
+
+/* manage-roll */
+.manage-roll {
+    padding: 60px 20px; /* Add overall padding */
+}
+
+.manage-roll .center-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px; /* Space between text and cards */
+}
+
+.manage-roll .center-text h5 {
+    font-size: 50px;
+    color: rgb(17, 150, 0);
+    padding: 20px;
+}
+
+.manage-roll .center-text p {
+    font-size: 20px;
+    color: rgb(80, 80, 80);
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* profile-card */
+.profile-card {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px; /* Space between cards */
+}
+
+.profile-card .card-img {
+    width: calc(33.33% - 20px); /* Approx 1/3 width minus gap for 3 columns */
+    min-width: 300px; /* Minimum width for the cards */
+    margin: 0; /* Remove individual margins, use gap instead */
+    position: relative;
+    /* Hide overflow from image */
+    border-radius: 10px;
+    box-shadow: rgba(233, 233, 233, 0.7) 7px 7px 7px 7px; /* Add shadow */
+    background-color: white; /* Card background */
+    margin-bottom: 60px; /* Space below cards to prevent overlap with footer */
+}
+
+.profile-card .card-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block; /* Remove extra space below image */
+}
+
+.profile-card .card-img .box-absolute {
+    width: 80%;
+    height: 230px; 
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(20px); /* Initial position slightly below */
+    bottom: -20px; /* Start below the card image */
+    box-shadow: rgba(92, 92, 92, 0.1) 0px -2px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-out, bottom 0.3s ease-out; /* Add transition for hover effect */
+}
+
+.profile-card .card-img:hover .box-absolute {
+    transform: translateX(-50%) translateY(0); /* Move up on hover */
+    bottom: 0; /* Lift the overlay on hover */
+
+}
+
+.profile-card .card-img .box-absolute p {
+    font-size: 20px;
+    
+    color: black;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.profile-card .card-img .box-absolute button {
+    text-decoration: none;
+    border: none;
+    background-color: rgb(17, 0, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.profile-card .card-img .box-absolute button:hover {
+    background-color: rgb(10, 0, 150);
+}
+
+/* sub-footer */
+.sub-footer {
+    width: 100%;
+    height: auto; /* Adjust height based on content */
+    background-color: #fafafa; /* Consistent with other light sections */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px; /* Add padding for spacing */
+    text-align: center;
+}
+
+.sub-footer h6 {
+    font-size: 40px;
+    color: rgb(80, 80, 80);
+    padding: 10px;
+    line-height: 1.2;
+}
+
+.sub-footer button {
+    text-decoration: none;
+    border: none;
+    background-color: rgb(17, 0, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sub-footer button:hover {
+    background-color: rgb(10, 0, 150);
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    min-height: 300px; /* Use min-height */
+    background-color: rgb(161, 161, 161);
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the top */
+    padding: 60px 20px; /* Add padding for overall spacing */
+}
+
+.footer .col-6 {
+    width: 48%; /* Adjust for desktop */
+    min-width: 300px; /* Minimum width for each column */
+    height: auto; /* Adjust height based on content */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; /* Align text to start */
+    padding: 20px;
+}
+
+.footer-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; /* Align text to start */
+    padding: 0; /* Remove padding here, handled by col-6 */
+    animation: slideIn 1.5s ease-out;
+}
+
+.footer-text .image {
+    width: 140px;
+    height: 25px;
+    margin-bottom: 20px; /* Space below logo */
+}
+
+.footer-text .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-text .copyright {
+    padding-top: 0; /* Remove redundant padding */
+    padding-bottom: 20px;
+}
+
+.footer-text .copyright p {
+    color: #fafafa;
+    font-size: 20px;
+    padding: 5px 0; /* Adjust padding */
+    text-align: left; /* Align text to left */
+}
+
+.footer-text .social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.footer-text .social-icons i {
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 10px; /* Increased padding for icons */
+    color: #fafafa;
+    font-size: 20px; /* Increased font size for icons */
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-text .social-icons i:hover {
+    color: rgb(17, 0, 255);
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+/* footer-left */
+.footer-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Space out company/support and search */
+    align-items: flex-start;
+    animation: slideIn 1.5s ease-out;
+    flex-wrap: wrap; /* Allow wrapping for smaller desktop screens */
+    gap: 20px; /* Gap between major footer columns */
+}
+
+/* company-support */
+.company-support {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to top */
+    gap: 60px; /* Space between Company and Support columns */
+}
+
+.company-support .company {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; /* Align text to start */
+}
+
+.company-support .company .company-info p {
+    font-size: 30px;
+    color: #fafafa;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.company-support .company .company-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.company-support .company .company-links a {
+    text-decoration: none;
+    color: #fafafa;
+    padding: 5px 0;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.company-support .company .company-links a:hover {
+    color: rgb(17, 0, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-left .search {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-left .search input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    padding-right: 50px; /* Space for icon */
+    margin-bottom: 10px;
+}
+
+.footer-left .search input:focus {
+    outline: 1px solid rgb(17, 0, 255); /* Highlight on focus */
+}
+
+.footer-left .search .search-bar {
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+.footer-left .search .search-bar i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+    padding-top: 140px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-left .search .search-bar p {
+    font-size: 30px;
+    color: rgb(49, 49, 49);
+    padding: 5px 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left; 
+}
+
+/* Helper class for green text in H1 */
+.highlight-green {
+    font-size: inherit; /* Inherit font size from parent H1 */
+    color: rgb(23, 252, 23);
+}
+
+/* Desktop Screens (1024x768 pixels) - Targeting width >= 1024px and height <= 768px */
+@media (min-width: 1720px) and (max-height: 768px) {
+    .Header {
+        padding: 0 40px; /* Adjust padding for desktop */
+    }
+
+    .logo {
+        margin: 10px 40px; /* Adjust margin */
+    }
+
+    .navbar {
+        margin: 0px 80px; /* Adjust margin */
+    }
+
+    .banner {
+        padding: 40px 20px; /* Adjust padding */
+    }
+
+    .col-6 {
+        width: 48%; /* Slightly adjust width for better balance */
+    }
+
+    .client .client-section img {
+        max-width: 12%; /* Make images slightly smaller to fit more */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .contianer {
+        max-width: 960px; /* Narrow container for tighter layout */
+    }
+
+    .row {
+        justify-content: space-between; /* Ensure space between items */
+    }
+
+    .col-4 {
+        width: 31%; /* Adjust for 3 columns with gaps */
+    }
+
+    .member .col-6 {
+        width: 48%; /* Maintain pairs */
+    }
+
+    .tesla-section {
+        padding: 60px 40px;
+    }
+
+    .tesla-section .tesla-text .img-client {
+        justify-content: flex-start; /* Align client icons to start */
+    }
+
+    .profile-card .card-img {
+        width: calc(33.33% - 20px); /* Keep 3 columns */
+    }
+
+    .footer .col-6 {
+        width: 45%; /* Adjust width for desktop footer columns */
+    }
+
+    .footer-left {
+        justify-content: flex-end; /* Push company/support and search to the right */
+        gap: 60px;
+    }
+
+    .company-support {
+        flex-direction: row; /* Keep company and support side-by-side */
+    }
+}
+
+/* Mobile Phones (375px width) */
+@media (max-width: 375px) {
+    .Header {
+        flex-direction: column; /* Stack logo and navbar */
+        height: auto;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 10px 0; /* Center logo */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack nav links and button */
+        width: 100%;
+        margin: 10px 0;
+        gap: 10px;
+    }
+
+    .navbar .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .nav a {
+        padding: 8px 10px;
+        text-align: center;
+    }
+
+    .Header .navbar .btn {
+        width: 80%; /* Make button wider */
+        margin-top: 10px;
+    }
+
+    .banner,
+    .banner .x,
+    .tesla-section {
+        flex-direction: column; /* Stack content vertically */
+        min-height: auto;
+        padding: 20px 10px;
+    }
+
+    .col-6 {
+        width: 100%; /* Full width for all columns */
+        height: auto;
+        padding: 0; /* Reset padding to be applied by parent */
+    }
+
+    .banner .banner-text,
+    .banner .x .banner-text .banner-info,
+    .tesla-section .tesla-text {
+        text-align: center;
+        align-items: center; /* Center content within these blocks */
+        padding: 15px; /* Adjust padding for mobile */
+    }
+
+    .banner .banner-text h1,
+    .body-center h2,
+    .sub-footer h6,
+    .manage-roll .center-text h5 {
+        font-size: 32px; /* Smaller font for mobile headings */
+        line-height: 1.2;
+    }
+
+    .banner .banner-text p,
+    .body-center p {
+        font-size: 16px; /* Smaller font for body text */
+    }
+
+    .client .client-section {
+        flex-direction: column; /* Stack client images */
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    .client .client-section img {
+        max-width: 40%; /* Larger client images on mobile */
+        padding: 10px;
+    }
+
+    .contianer {
+        max-width: 100%; /* Full width for container */
+        padding: 0 10px;
+    }
+
+    .row {
+        flex-direction: column; /* Stack feature cards */
+        gap: 20px;
+    }
+
+    .col-4 {
+        width: 90%; /* Almost full width for each feature card */
+        height: auto;
+        min-width: unset; /* Remove min-width to allow shrinking */
+    }
+
+    .member-member {
+        flex-direction: column; /* Stack member statistics */
+    }
+
+    .member {
+        width: 100%; /* Full width for each member block */
+        padding: 10px;
+        min-width: unset; /* Remove min-width */
+    }
+
+    .member .Group-1 {
+        flex-direction: row; /* Keep image and text side-by-side */
+        justify-content: center; /* Center them */
+        margin-bottom: 10px;
+    }
+
+    .tesla-section .tesla-text {
+        align-items: center; /* Center align text */
+        text-align: center;
+    }
+
+    .tesla-section .tesla-text .img-client {
+        flex-direction: row; /* Keep client row horizontal but allow wrap */
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .tesla-section .tesla-text .img-client img {
+        width: 30px; /* Smaller client icons */
+        margin: 0 5px;
+    }
+
+    .tesla-section .tesla-text button.meeting-clients {
+        width: 80%; /* Make button wider */
+    }
+
+    .manage-roll .center-text {
+        margin-bottom: 40px;
+    }
+
+    .profile-card {
+        flex-direction: column; /* Stack blog cards */
+        gap: 30px;
+    }
+
+    .profile-card .card-img {
+        width: 90%; /* Wider cards on mobile */
+        min-width: unset;
+        margin-bottom: 40px; /* Adjust spacing */
+    }
+
+    .profile-card .card-img .box-absolute {
+        width: 90%; /* Wider overlay on mobile */
+        transform: translateX(-50%) translateY(0); /* Ensure overlay is visible by default on mobile */
+        bottom: 0;
+    }
+
+    /* Keep hover effect for larger touch devices/if user uses mouse on mobile debug */
+    .profile-card .card-img:hover .box-absolute {
+        transform: translateX(-50%) translateY(0);
+        bottom: 0;
+    }
+
+    .sub-footer {
+        padding: 40px 15px;
+    }
+
+    .sub-footer h6 {
+        font-size: 28px;
+    }
+
+    .footer {
+        flex-direction: column; /* Stack footer columns */
+        align-items: center;
+        text-align: center;
+        padding: 40px 15px;
+    }
+
+    .footer .col-6 {
+        width: 100%; /* Full width for footer columns */
+        align-items: center; /* Center content in footer columns */
+        padding: 15px;
+    }
+
+    .footer-text {
+        align-items: center; /* Center align items within footer-text */
+    }
+
+    .footer-text .copyright p {
+        text-align: center; /* Center copyright text */
+    }
+
+    .footer-left {
+        flex-direction: column; /* Stack company/support and search */
+        gap: 30px;
+        align-items: center; /* Center these sections */
+    }
+
+    .company-support {
+        flex-direction: column; /* Stack company and support links */
+        gap: 30px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .company-support .company {
+        align-items: center; /* Center company column content */
+    }
+
+    .company-support .company .company-info p {
+        padding-top: 10px;
+    }
+
+    .company-support .company .company-links {
+        align-items: center;
+    }
+
+    .footer-left .search {
+        width: 90%; 
+        align-items: center; 
+    }
+
+    .footer-left .search .search-bar {
+        width: 90%; 
+        position: relative;
+    }
+
+    .footer-left .search .search-bar p {
+        text-align: center;
+        font-size: 20px; 
+        padding: 5px 0; 
+    }
+    .footer-left .search .search-bar i{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        cursor: pointer;
+
+
+    } 
+}
+>>>>>>> 2c08dbb1a3e74ed1319d46d34f075b1c0952f923
